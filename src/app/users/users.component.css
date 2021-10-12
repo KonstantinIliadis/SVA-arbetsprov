@@ -1,0 +1,72 @@
+div.userSelect {
+    display: inline;
+    padding: 5px; 
+    float:left;
+}
+
+div.todoSelect {
+    display: inline;
+    padding: 5px; 
+    float:left;
+    margin-left: 5%;
+}
+
+h2 {
+    font: Lato bold;
+    color:  #d22630;
+    size: 36px;
+    line-height: 42px;
+}
+
+select {
+    cursor: pointer;
+}
+
+#todosTable {
+    font-family: Georgia;
+    border-collapse: separate;
+    width: 100%;
+}
+  
+#todosTable td, #todosTable th {
+    border: 2px solid #e9ecef;
+    padding: 8px;
+}
+  
+#todosTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+#todosTable tr:hover {background-color: #d8d8d8;}
+  
+#todosTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #b21b1c;
+    color: white;  
+}
+
+.status{
+    color: #4ea83b
+}
+
+/*span.badge {
+    color: #4ea83b;
+    float: right;
+}
+span.title {
+    color: #474747;
+    float: left;
+}
+li {
+    font: Georgia;
+    color:  #474747;
+    size: 16px;
+    line-height: 24px;    
+    padding-top: 2%;
+    margin-left: -4%;    
+}
+
+ul{
+    list-style-type: square;
+}
+*/

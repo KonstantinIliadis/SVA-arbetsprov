@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="userSelect" >
+        <h2>Användare</h2>    
+        <select #usernameSelect (change)='onChangeUsername(usernameSelect.value)'>
+            <option disabled selected>Välj användare</option>
+            <option *ngFor="let user of users" [value]="user.id">{{user.username}}</option>
+        </select>
+    </div>
+
+
+    <!--<div class="todoSelect" id="currentUserTodos" >
+        <h2>To do's </h2>
+        <ul>   
+            <li *ngFor="let todo of userTodos" >
+                <span class="badge">{{todo.state}}</span> <span class ="title">{{todo.title}}</span>
+            </li>
+        </ul>
+    </div>-->
+
+    <div class="todoSelect" id="currentUserTodos" >
+        <h2>To do's </h2>
+        <table id="todosTable">
+            <tr>
+                <th>Status</th>
+                <th>Titel</th>
+            </tr>   
+            <tr *ngFor="let todo of userTodos" >
+                <td class="status">{{todo.state}}</td>
+                <td>{{todo.title}}</td>
+            </tr>
+        </table>
+        
+    </div>
+</div>
